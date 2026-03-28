@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 04</title>
+
+    <link rel="icon" href="../assests/images/CRISTIANO%20JONALDO.png" type="image/png">
+    <link rel="stylesheet" href="../assests/css/atividade-4.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Atividade 04</h1>
+        <p class="descricao">Sandbox para praticar audio, video e CSS externo.</p>
+
+        <p><a class="voltar" href="index.html">Voltar para pagina inicial</a></p>
+
+        <section class="bloco">
+            <h2>Teste de audio</h2>
+            <audio controls preload="metadata" autoplay loop>
+                <source src="../assests/audios/subi-no-pe-de-pera-bob-128k.mp3" type="audio/mpeg">
+                <p>
+                    Seu navegador nao reproduz audio.
+                    <a href="../assests/audios/subi-no-pe-de-pera-bob-128k.mp3" download="subi-no-pe-de-pera-bob-128k.mp3">Clique aqui para baixar</a>.
+                </p>
+            </audio>
+        </section>
+
+        <section class="bloco">
+            <h2>Teste de video externo</h2>
+            <div class="video-wrapper">
+                <iframe
+                    src="https://player.vimeo.com/video/76979871"
+                    title="Video externo no Vimeo"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <p>
+                Caso o player nao abra, assista direto no
+                <a href="https://vimeo.com/76979871" target="_blank" rel="noopener noreferrer">Vimeo</a>.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
