@@ -1,6 +1,6 @@
-💧 H2O Express | Delivery de Água
+🎬 CinePrime | Plataforma de Cinema
 
-O H2O Express é uma aplicação web que simula um sistema de entrega de água mineral, e realizem pedidos de forma rápida, escolham entre reposição ou compra de casco novo e gerenciem suas entregas de forma prática.
+O CinePrime é uma aplicação web para um cinema local, onde o usuário pode comprar ingressos, ver o que está em cartaz e montar combos clássicos de forma prática.
 
 Este projeto está sendo desenvolvido para a disciplina de Web, com o objetivo de construir uma aplicação completa ao longo do semestre.
 
@@ -21,12 +21,16 @@ JS/ -> Scripts JavaScript para interatividade (carrinho, validações)
 
 /PAGES
 
-ABOUT/ -> Página "Sobre a Distribuidora"
+ABOUT/ -> Página "Sobre o CinePrime"
 
 CONTACTS/ -> Página de contato e suporte
 
-CATALOG/ -> Catálogo de produtos (Galões de água ou garrafas)
+CATALOG/ -> Catálogo de filmes e sessões
 
 CART/ -> Carrinho de compras e finalização de pedido
 
-INDEX.HTML -> Página inicial do projeto (H2O Express Home).
+INDEX.HTML -> Página inicial do projeto (CinePrime).
+
+SANDBOX.HTML -> Espaço de experimentação com audio, video e estrutura de blocos
+
+PALETAS.HTML -> Definição da paleta visual e identidade do projeto

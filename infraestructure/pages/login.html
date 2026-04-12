@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CinePrime | Login</title>
+
+    <link rel="icon" href="../assests/images/logoCinema.png" type="image/png">
+    <link rel="stylesheet" href="../assests/css/menu.css">
+    <link rel="stylesheet" href="../assests/css/atividade-6.css">
+</head>
+
+<body>
+    <header>
+        <h1>CinePrime</h1>
+        <p>Acesse sua conta para gerenciar o painel administrativo.</p>
+
+
+    </header>
+
+    <main>
+        <section class="login-box">
+            <h2>Entrar</h2>
+            <p class="subtexto">Preencha seus dados para acessar o painel.</p>
+
+            <!-- Email e senha para testar o login  -->
+            <p
+                style="text-align: center; color: var(--gold); font-size: 0.85rem; margin-top: -10px; margin-bottom: 20px;">
+                <strong>Acesso de teste:</strong> admin@cineprime.com | 1234
+            </p>
+
+            <form id="formLogin" novalidate>
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required
+                        title="Informe um e-mail válido (ex: nome@dominio.com)">
+                    <span class="erro">Informe um e-mail válido.</span>
+                </div>
+
+                <div class="campo">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required minlength="4"
+                        title="A senha deve ter no mínimo 4 caracteres">
+                    <span class="erro">A senha é obrigatória (mínimo 4 caracteres).</span>
+                </div>
+
+                <button type="submit" class="btn-login">Entrar</button>
+
+                <p class="login-erro-geral" id="erroGeral">E-mail ou senha incorretos. Tente novamente.</p>
+            </form>
+        </section>
+
+        <nav class="admin-voltar" aria-label="Navegação secundária">
+            <a href="index.html">Voltar para a página inicial</a>
+        </nav>
+    </main>
+
+    <footer>
+        <p>CinePrime - Página de Login</p>
+    </footer>
+
+    <script>
+        var form = document.getElementById("formLogin");
+        var erroGeral = document.getElementById("erroGeral");
+
+        form.addEventListener("submit", function (evento) {
+            evento.preventDefault();
+            erroGeral.style.display = "none";
+
+            var email = document.getElementById("email");
+            var senha = document.getElementById("senha");
+
+            // Aciona os alertas do navegador (balõezinhos vermelhos) se faltar um '@' ou estiver muito curto
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return;
+            }
+
+            /* Autenticação fictícia */
+            if (email.value === "admin@cineprime.com" && senha.value === "1234") {
+                window.location.href = "admin.html";
+            } else {
+                erroGeral.style.display = "block";
+            }
+        });
+    </script>
+</body>
+
+</html>
